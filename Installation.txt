@@ -1,0 +1,31 @@
+Guideliness for the Installation
+-----------------------------------
+
+Please find the steps below to install the extension in magento 2.0 :
+
+Step 1: Download the extension.
+
+Step 2: Unzip the file in a temporary directory
+
+Step 3: Upload it to your Magento installation root directory or move app folder in Magento2 root directory or follow the folder structure to move the folder and files.
+
+Step 4: Disable the cache under System >> Cache Management
+
+Step 5: After opening Stores >> Configuration >> Advanced >> Advanced, the module will be shown in the admin panel.
+
+Step 6: There are two ways to enable the extension:
+
+	From magento admin panel:
+		a. To install a new extension, you will need to access your admin dashboard and navigate to System >> Web Setup Wizard (See this link : http://prntscr.com/bdqe5z)
+		b. From the 3 blocks of options you have at your disposal, choose the Component Manager  (See this link : http://prntscr.com/bdqee8)
+		c. Select the extension/s you want to install and click on the Install button or mark then and select a bulk install action form the top of the page.
+		d. Follow these steps :
+			-> Start Readiness Check 
+			-> Create Backup
+			-> Component Install
+			
+	You can install enable/Disable extension using composer, using these commands below:
+	
+		a. php bin/magento module:disable Hexasoft_FraudLabsPro : Disable Hexasoft_FraudLabsPro extension.
+		b. php bin/magento module:enable Hexasoft_FraudLabsPro  : Enable Hexasoft_FraudLabsPro extension.
+		c. php bin/magento                                      : List out all the commands.
